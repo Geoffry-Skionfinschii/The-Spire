@@ -1,5 +1,6 @@
 {
     "values": [
-        "infection_ctm:load"
+        "infection_ctm:load",
+        "infection_spawn_building:load"
     ]
 }

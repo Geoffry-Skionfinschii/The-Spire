@@ -1,0 +1,3 @@
+
+
+function infection_spawn_building:refresh_all_signs
