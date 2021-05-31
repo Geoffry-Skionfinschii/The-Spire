@@ -8,6 +8,7 @@ function infection_world_gen:generate_spawn
 
 scoreboard players set $world_loaded INF_StatusReg 1
 scoreboard players set $game_state INF_StatusReg 0
+scoreboard players set $world_x_offset INF_StatusReg 5000
 
 
 scoreboard players set $infected_count INF_Settings 1

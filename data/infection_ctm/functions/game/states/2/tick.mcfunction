@@ -1,1 +1,0 @@
-effect give @a haste 5 1

@@ -11,6 +11,7 @@ scoreboard players set #30min INF_Constants 36000
 scoreboard players set #1min INF_Constants 1200
 scoreboard players set #2 INF_Constants 2
 scoreboard players set #5 INF_Constants 5
+scoreboard players set #20 INF_Constants 20
 # Timer values - These are all timers, make sure to check for duplicates.
 scoreboard objectives add INF_Timers dummy
 # Game settings - All game settings, these should not change during a game, only during Game State 0

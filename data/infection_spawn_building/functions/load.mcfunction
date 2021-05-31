@@ -10,7 +10,7 @@ scoreboard objectives add SPWN_Temporary dummy
 # 0 - no click
 # 1 - number of infected
 # 2 - gear scaling
-# 3 - gear scale rate
+# 3 - preview map
 # 4 - hold time
 # 5 - start game
 # 6 - game time
