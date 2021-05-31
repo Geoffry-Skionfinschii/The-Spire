@@ -1,0 +1,1 @@
+effect give @a dolphins_grace 5 1

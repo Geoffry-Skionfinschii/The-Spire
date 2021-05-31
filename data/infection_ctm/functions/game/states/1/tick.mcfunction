@@ -1,0 +1,1 @@
+effect give @a night_vision 5 1
