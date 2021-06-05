@@ -1,2 +1,0 @@
-setblock 0 ~ 0 minecraft:structure_block[mode=load]{author:"Geo_Skio",ignoreEntities:1b,integrity:1.0f,metadata:"",mirror:"NONE",mode:"LOAD",name:"infection_world_gen:spawn",posX:-7,posY:-4,posZ:-7,powered:0b,rotation:"NONE",seed:0L,showair:0b,showboundingbox:1b,sizeX:15,sizeY:45,sizeZ:15}
-setblock 0 ~-1 ~ redstone_block

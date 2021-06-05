@@ -1,0 +1,3 @@
+
+
+function the_spire_spawn:refresh_all_signs

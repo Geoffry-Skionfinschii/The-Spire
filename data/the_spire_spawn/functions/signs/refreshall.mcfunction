@@ -1,0 +1,8 @@
+
+
+function the_spire_spawn:signs/game_time
+function the_spire_spawn:signs/preview_area
+function the_spire_spawn:signs/gear_scaling
+function the_spire_spawn:signs/hold_point_time
+function the_spire_spawn:signs/infected_count
+function the_spire_spawn:signs/start_game
