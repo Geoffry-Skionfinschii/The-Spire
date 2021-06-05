@@ -1,1 +1,1 @@
-execute as @e[type=marker,tag=GEN_SPAWN_MARKER] at @s positioned ~ ~29 ~ run function infection_spawn_building:signs/refreshall
+execute as @e[type=marker,tag=GEN_SPAWN_MARKER] at @s positioned ~ ~29 ~ run function the_spire_spawn:signs/refreshall

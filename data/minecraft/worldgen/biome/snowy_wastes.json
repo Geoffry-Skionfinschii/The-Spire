@@ -1,5 +1,5 @@
 {
-  "scale": 0.05,
+  "scale": 0.2,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
@@ -12,8 +12,11 @@
     "water_color": 4159204,
     "water_fog_color": 329011
   },
-  "surface_builder": "minecraft:grass",
+  "surface_builder": "minecraft:frozen_wastes",
   "carvers": {
+    "air": [
+      "minecraft:canyon"
+    ]
   },
   "features": [
     [],
@@ -36,20 +39,10 @@
       "minecraft:rare_small_dripstone"
     ],
     [
-      "minecraft:patch_tall_grass_2",
-      "minecraft:glow_lichen",
-      "minecraft:plain_vegetation",
-      "minecraft:flower_plain_decorated",
-      "minecraft:patch_grass_plain",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
+        "minecraft:trees_snowy"
     ],
     [
-      "minecraft:freeze_top_layer"
+        "minecraft:freeze_top_layer"
     ]
   ],
   "starts": [
@@ -60,9 +53,9 @@
     "creature": [
       {
         "type": "minecraft:wolf",
-        "weight": 12,
-        "minCount": 4,
-        "maxCount": 4
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 3
       }
     ],
     "ambient": [
@@ -84,6 +77,6 @@
   "precipitation": "snow",
   "temperature": 0.0,
   "downfall": 0.4,
-  "category": "plains",
-  "depth": 0.125
+  "category": "icy",
+  "depth": 0.6
 }

@@ -1,6 +1,6 @@
 
 
-scoreboard players operation #time_until_start INF_Temporary = $GameBeginTimer INF_Timers
-scoreboard players operation #time_until_start INF_Temporary /= #20 INF_Constants
+scoreboard players operation #time_until_start G_Temporary = $GameBeginTimer G_Timers
+scoreboard players operation #time_until_start G_Temporary /= #20 G_Constants
 
-title @a actionbar [{"text":"Game begins in "},{"score":{"name": "#time_until_start","objective": "INF_Temporary"}},{"text":"s"}]
+title @a actionbar [{"text":"Game begins in "},{"score":{"name": "#time_until_start","objective": "G_Temporary"}},{"text":"s"}]

@@ -1,0 +1,4 @@
+scoreboard players operation #sign_calc SPWN_Temporary = $assassin_count G_Settings
+
+execute if score $assassin_count G_Settings matches 1.. run data merge block ~1 ~2 ~3 {Text1:'[{"text":"# Assassins","clickEvent": {"action": "run_command","value": "/trigger SPWN_ClickSign set 1"}}]',Text2:'[{"score":{"name":"#sign_calc","objective": "SPWN_Temporary"},"color": "dark_blue"},{"text":" players"}]',Text4:'{"text":"R: Players / 4"}'}
+execute if score $assassin_count G_Settings matches 0 run data merge block ~1 ~2 ~3 {Text1:'[{"text":"# Assassins","clickEvent": {"action": "run_command","value": "/trigger SPWN_ClickSign set 1"}}]',Text2:'[{"text":"None","color": "dark_blue"}]',Text4:'{"text":"R: Players / 4"}'}

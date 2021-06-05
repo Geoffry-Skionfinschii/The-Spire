@@ -1,0 +1,4 @@
+scoreboard players operation #sign_calc SPWN_Temporary = $points_to_win G_Settings
+
+execute if score $points_to_win G_Settings matches 1.. run data merge block ~1 ~1 ~3 {Text1:'[{"text":"Spire Charge Time","clickEvent": {"action": "run_command","value": "/trigger SPWN_ClickSign set 4"}}]',Text2:'[{"score":{"name":"#sign_calc","objective": "SPWN_Temporary"},"color": "dark_blue"},{"text":" minutes"}]',Text4:'{"text":"R: 10 minutes"}'}
+execute if score $points_to_win G_Settings matches 0 run data merge block ~1 ~1 ~3 {Text1:'[{"text":"Spire Charge Time","clickEvent": {"action": "run_command","value": "/trigger SPWN_ClickSign set 4"}}]',Text2:'[{"text":"Instant","color": "dark_blue"}]',Text4:'{"text":"R: 10 minutes"}'}

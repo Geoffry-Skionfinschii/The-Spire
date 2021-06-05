@@ -1,2 +1,0 @@
-execute if score $infected_gear G_Settings matches 0 run data merge block ~ ~2 ~3 {Text1:'[{"text":"Infected Gear","clickEvent": {"action": "run_command","value": "/trigger SPWN_ClickSign set 2"}}]',Text2:'[{"text":"Disabled","color": "dark_blue"}]'}
-execute if score $infected_gear G_Settings matches 1 run data merge block ~ ~2 ~3 {Text1:'[{"text":"Infected Gear","clickEvent": {"action": "run_command","value": "/trigger SPWN_ClickSign set 2"}}]',Text2:'[{"text":"Enabled","color": "dark_blue"}]'}
