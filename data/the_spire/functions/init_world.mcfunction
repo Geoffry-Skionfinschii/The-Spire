@@ -6,13 +6,13 @@ function the_spire_worldgen:generate_spawn
 
 
 
-scoreboard players set $world_loaded INF_StatusReg 1
-scoreboard players set $game_state INF_StatusReg 0
-scoreboard players set $world_x_offset INF_StatusReg 5000
+scoreboard players set $world_loaded G_StatusReg 1
+scoreboard players set $game_state G_StatusReg 0
+scoreboard players set $world_x_offset G_StatusReg 5000
 
 
-scoreboard players set $infected_count INF_Settings 1
-scoreboard players set $infected_gear INF_Settings 1
-scoreboard players set $infected_gear_scale INF_Settings 10
-scoreboard players set $hold_time INF_Settings 6000
-scoreboard players set $game_time INF_Settings 144000
+scoreboard players set $infected_count G_Settings 1
+scoreboard players set $infected_gear G_Settings 1
+scoreboard players set $infected_gear_scale G_Settings 10
+scoreboard players set $hold_time G_Settings 6000
+scoreboard players set $game_time G_Settings 144000

@@ -1,3 +1,3 @@
 
 
-scoreboard players set $game_state INF_StatusReg 1
+scoreboard players set $game_state G_StatusReg 1
