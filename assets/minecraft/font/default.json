@@ -1,0 +1,76 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "the_spire:fonts/0_8.png",
+            "ascent": 8,
+            "chars": [
+                ""
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "the_spire:fonts/1_8.png",
+            "ascent": 8,
+            "chars": [
+                ""
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "the_spire:fonts/2_8.png",
+            "ascent": 8,
+            "chars": [
+                ""
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "the_spire:fonts/3_8.png",
+            "ascent": 8,
+            "chars": [
+                ""
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "the_spire:fonts/4_8.png",
+            "ascent": 8,
+            "chars": [
+                ""
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "the_spire:fonts/5_8.png",
+            "ascent": 8,
+            "chars": [
+                ""
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "the_spire:fonts/6_8.png",
+            "ascent": 8,
+            "chars": [
+                ""
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "the_spire:fonts/7_8.png",
+            "ascent": 8,
+            "chars": [
+                ""
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "the_spire:fonts/8_8.png",
+            "ascent": 8,
+            "chars": [
+                ""
+            ]
+        }
+    ]
+}

@@ -6,4 +6,4 @@ execute if score $world_loaded G_StatusReg matches -2147483648..2147483647 run f
 
 
 
-kill @e[type=item,nbt={Item:{id:"minecraft:barrier"}}]
+kill @e[type=item,nbt={Item:{tag:{Fixed:1b}}}]
