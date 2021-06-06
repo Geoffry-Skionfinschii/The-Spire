@@ -61,7 +61,7 @@ const generateRawJSON = (t, changeDir) => {
     }
     return JSON.stringify(
         [
-            returnJson,{"text": getBar(t, TEMP_BAR_MAX, TEMP_BAR_LEN), "color": "green"}
+            returnJson,{"text": getBar(t, TEMP_BAR_MAX, TEMP_BAR_LEN), "color": "dark_green"}
         ]
     )
 }
