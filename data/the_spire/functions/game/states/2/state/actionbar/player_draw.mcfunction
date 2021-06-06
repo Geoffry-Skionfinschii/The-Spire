@@ -1,15 +1,16 @@
-scoreboard players add #health_prog G_Temporary 1
+scoreboard players operation #temp_prog G_Temporary = @s G_Temperature
+scoreboard players operation #temp_prog G_Temporary /= #120 G_Constants
 
-execute if score #health_prog G_Temporary matches 100 run scoreboard players add #temp_prog G_Temporary 1
-execute if score #health_prog G_Temporary matches 101.. run scoreboard players set #health_prog G_Temporary 0
-
-execute if score #temp_prog G_Temporary matches 100 run scoreboard players add #food_prog G_Temporary 1
-execute if score #temp_prog G_Temporary matches 101.. run scoreboard players set #temp_prog G_Temporary 0
-
-execute if score #food_prog G_Temporary matches 101.. run scoreboard players set #food_prog G_Temporary 0
+execute if score @s G_AmbTemperature matches 1.. run scoreboard players set #temp_change_dir G_Temporary 1
+execute if score @s G_AmbTemperature matches 0 run scoreboard players set #temp_change_dir G_Temporary 0
+execute if score @s G_AmbTemperature matches ..-1 run scoreboard players set #temp_change_dir G_Temporary -1
 
 
-function the_spire:game/states/2/state/actionbar/renderer/render_actionbar
+execute unless score $RenderPlayerBar G_Timers matches -2147483648..2147483647 run scoreboard players set $RenderPlayerBar G_Timers 0
+execute if score $RenderPlayerBar G_Timers matches 0 run function the_spire:game/states/2/state/actionbar/renderer/render_actionbar
+
+scoreboard players add $RenderPlayerBar G_Timers 1
+execute if score $RenderPlayerBar G_Timers matches 10.. run scoreboard players set $RenderPlayerBar G_Timers 0
 
 # Draw
 #data modify storage the_spire:actionbar Text append value 

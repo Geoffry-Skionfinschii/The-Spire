@@ -7,12 +7,17 @@ execute if score #temp_calc G_Temporary matches ..-1 run scoreboard players remo
 execute if score #temp_calc G_Temporary matches ..-11 run scoreboard players remove @s G_Temperature 1
 execute if score #temp_calc G_Temporary matches ..-21 run scoreboard players remove @s G_Temperature 1
 execute if score #temp_calc G_Temporary matches ..-31 run scoreboard players remove @s G_Temperature 1
+execute if score #temp_calc G_Temporary matches ..-41 run scoreboard players remove @s G_Temperature 1
+execute if score #temp_calc G_Temporary matches ..-51 run scoreboard players remove @s G_Temperature 1
 
 
 execute if score #temp_calc G_Temporary matches 1.. run scoreboard players add @s G_Temperature 1
 execute if score #temp_calc G_Temporary matches 11.. run scoreboard players add @s G_Temperature 1
 execute if score #temp_calc G_Temporary matches 21.. run scoreboard players add @s G_Temperature 1
-execute if score #temp_calc G_Temporary matches 31.. run scoreboard players add @s G_Temperature 1
+execute if score #temp_calc G_Temporary matches 31.. run scoreboard players add @s G_Temperature 2
+execute if score #temp_calc G_Temporary matches 41.. run scoreboard players add @s G_Temperature 2
+execute if score #temp_calc G_Temporary matches 51.. run scoreboard players add @s G_Temperature 2
+execute if score #temp_calc G_Temporary matches 101.. run scoreboard players add @s G_Temperature 10
 
 
 

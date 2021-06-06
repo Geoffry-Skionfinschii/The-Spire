@@ -2,16 +2,15 @@ const fs = require('fs');
 
 const FUNCTION_DIR = "the_spire:game/states/2/state/actionbar/renderer";
 //All 8
-//const PROGRESS_FRACTIONALS = [``,``,``,``,``,``,``,``,``];
-//Every 2nd removed
-const PROGRESS_FRACTIONALS = [``,``,``,``,``];
+const PROGRESS_FRACTIONALS = [``,``,``,``,``,``,``,``,``];
 
-const HEALTH_BAR_LEN = 10;
-const HEALTH_BAR_MAX = 100;
+//Every 2nd removed
+//const PROGRESS_FRACTIONALS = [``,``,``,``,``];
+
+//const PROGRESS_FRACTIONALS = [`A`, `B`, `C`, `D`];
+
 const TEMP_BAR_LEN = 10;
 const TEMP_BAR_MAX = 100;
-const FOOD_BAR_LEN = 10;
-const FOOD_BAR_MAX = 100;
 
 
 if(fs.existsSync('./actionbar_funcs')) {
@@ -26,59 +25,63 @@ if(!fs.existsSync('./actionbar_funcs')) {
 const getBar = (value, max, len) => {
     //console.log("baqr");
     //console.log(value, max, len);
-    let barPercent = Math.floor(value / max);
+    let barPercentRaw = value / len;
+    let barPercent = Math.floor(barPercentRaw);
     //console.log(barPercent);
 
-    let remainingBarPart = value % PROGRESS_FRACTIONALS.length;
+    let remainingBarPart = barPercentRaw - barPercent;
     let str = `${PROGRESS_FRACTIONALS[PROGRESS_FRACTIONALS.length - 1].repeat(barPercent)}`;
 
     //console.log(remainingBarPart);
 
-    str += PROGRESS_FRACTIONALS[Math.floor(remainingBarPart)];
+    str += PROGRESS_FRACTIONALS[Math.floor(remainingBarPart * PROGRESS_FRACTIONALS.length)];
 
     str += `${PROGRESS_FRACTIONALS[0].repeat(Math.max(0, len - str.length))}`;
 
     if(str.includes("undefined")) throw str;
-    return str;
+    return str.substr(0, 10);
 }
 
-const generateRawJSON = (h, t, f) => {
+const generateRawJSON = (t, changeDir) => {
+    let tRaw = t / TEMP_BAR_LEN;
+
+    let returnJson = {};
+    switch(changeDir) {
+        case -1:
+            returnJson = {"text": "∨ 🔥 ","color":"dark_blue"}
+            break;
+        case 0:
+            returnJson = {"text": "– 🔥 ","color":"gold"}
+            break;
+        case 1:
+            returnJson = {"text": "∧ 🔥 ","color":"gold"}
+            break;
+        default:
+            throw new Error("Invalid state");
+    }
     return JSON.stringify(
         [
-            {"text": "Health"},{"text": getBar(h, HEALTH_BAR_MAX, HEALTH_BAR_LEN) + h},
-            {"text": "Temp"},{"text": getBar(t, TEMP_BAR_MAX, TEMP_BAR_LEN) + t},
-            {"text": "Food"},{"text": getBar(f, FOOD_BAR_MAX, FOOD_BAR_LEN) + f}
+            returnJson,{"text": getBar(t, TEMP_BAR_MAX, TEMP_BAR_LEN), "color": "green"}
         ]
     )
 }
 
 let BinTreeMain = "# Auto generated list of all actionbar outcomes\n";
 
-for(let h = 0; h <= HEALTH_BAR_LEN * PROGRESS_FRACTIONALS.length; h++) {
+for(let t = 0; t <= (TEMP_BAR_MAX / TEMP_BAR_LEN) * PROGRESS_FRACTIONALS.length; t++) {
+    tRel = t * (TEMP_BAR_MAX / TEMP_BAR_LEN) / PROGRESS_FRACTIONALS.length;
 
-    let hState = h;
-    
-    let buildAString = "";
-    for(let t = 0; t <= TEMP_BAR_LEN * PROGRESS_FRACTIONALS.length; t++) {
+    let internalString = "";
+    for(let changeSt = -1; changeSt <= 1; changeSt++) {
 
-        let tState = t;
-
-        let internalString = "";
-        for(let f = 0; f <= FOOD_BAR_LEN * PROGRESS_FRACTIONALS.length; f++) {
-            let fState = f;
-
-            internalString += `execute ` +
-                `if score #food_prog G_Temporary matches ${f}..${Math.floor(f + ((FOOD_BAR_LEN * PROGRESS_FRACTIONALS.length) / FOOD_BAR_MAX))} ` +
-                `run title @s actionbar ${generateRawJSON(h, t, f)}\n`
-        }
-        if(!fs.existsSync(`./actionbar_funcs/bin/${h}`)) {
-            fs.mkdirSync(`./actionbar_funcs/bin/${h}`);
-        }
-        fs.writeFileSync(`./actionbar_funcs/bin/${h}/${t}.mcfunction`, internalString);
-        buildAString += `execute if score #temp_prog G_Temporary matches ${t}..${Math.floor(t + ((TEMP_BAR_LEN * PROGRESS_FRACTIONALS.length) / TEMP_BAR_MAX))} run function ${FUNCTION_DIR}/bin/${h}/${t}\n`;
+        internalString += `execute ` +
+            `if score #temp_change_dir G_Temporary matches ${changeSt} ` +
+            `run title @s actionbar ${generateRawJSON(tRel, changeSt)}\n`
     }
-    fs.writeFileSync(`./actionbar_funcs/bin/${h}.mcfunction`, buildAString);
-    BinTreeMain += `execute if score #health_prog G_Temporary matches ${h}..${Math.floor(h + ((TEMP_BAR_LEN * PROGRESS_FRACTIONALS.length) / TEMP_BAR_MAX))} run function ${FUNCTION_DIR}/bin/${h}` + '\n';
+
+    fs.writeFileSync(`./actionbar_funcs/bin/${t}.mcfunction`, internalString);
+    BinTreeMain += `execute if score #temp_prog G_Temporary matches ${Math.floor(tRel)}..${Math.floor(tRel + ((TEMP_BAR_MAX / TEMP_BAR_LEN) / PROGRESS_FRACTIONALS.length)) - 1} run function ${FUNCTION_DIR}/bin/${t}` + '\n';
 }
+    
 
 fs.writeFileSync("./actionbar_funcs/render_actionbar.mcfunction", BinTreeMain);
