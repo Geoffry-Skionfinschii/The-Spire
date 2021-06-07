@@ -7,7 +7,7 @@ function the_spire_worldgen:generate_spawn
 
 
 scoreboard players set $world_loaded G_StatusReg 1
-scoreboard players set $game_state G_StatusReg 0
+scoreboard players set $game_state G_StatusReg -1
 scoreboard players set $world_x_offset G_StatusReg 5000
 
 

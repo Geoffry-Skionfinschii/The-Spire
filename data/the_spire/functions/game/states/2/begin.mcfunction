@@ -15,7 +15,7 @@ function the_spire:game/states/2/state/select_assassins
 function the_spire:game/states/2/state/tell_teams
 
 scoreboard players set @a G_ValidPlayers 1
-scoreboard players set @a G_Temperature 1200
+scoreboard players set @a G_Temperature 9999999
 scoreboard players set @a G_AmbTemperature 0
 
 #define score_holder $RecalculateAmbientTemperature G_Timers - Timer to track how long since last temperature calculation.

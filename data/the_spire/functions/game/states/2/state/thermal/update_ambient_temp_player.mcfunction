@@ -37,12 +37,12 @@ execute if block ~ ~-1 ~ ice run scoreboard players remove #area_temperature_cal
 execute if block ~ ~-1 ~ air if block ~ ~-2 ~ ice run scoreboard players remove #area_temperature_calc G_Temporary 50
 
 # Is there a campfire within 5 blocks
-execute if predicate the_spire:is_campfire_nearby run scoreboard players add #area_temperature_calc G_Temporary 20
+execute if predicate the_spire:is_campfire_nearby run scoreboard players add #area_temperature_calc G_Temporary 30
 
 # Is there lava within an area
-execute if predicate the_spire:is_lava_nearby run scoreboard players add #area_temperature_calc G_Temporary 40
+execute if predicate the_spire:is_lava_nearby run scoreboard players add #area_temperature_calc G_Temporary 45
 
 # Are they on fire? - Add lava again
-execute if predicate the_spire:is_burning run scoreboard players add #area_temperature_calc G_Temporary 40
+execute if predicate the_spire:is_burning run scoreboard players add #area_temperature_calc G_Temporary 50
 
 scoreboard players operation @s G_AmbTemperature = #area_temperature_calc G_Temporary

@@ -1,3 +1,4 @@
-tellraw @a "End 1"
 
-clear @a
+
+# Teleport players to cabin
+gamemode survival @a

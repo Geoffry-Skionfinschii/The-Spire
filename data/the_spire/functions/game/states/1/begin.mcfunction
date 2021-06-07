@@ -1,3 +1,4 @@
-tellraw @a "Begin 1"
 
-scoreboard players operation $GameBeginTimer G_Timers = #30sec G_Constants
+# Set worldgen timer
+scoreboard players set $WorldGenStep G_Timers 0
+

@@ -1,1 +1,1 @@
-tellraw @a "Begin 3"
+tellraw @a "Begin 0"

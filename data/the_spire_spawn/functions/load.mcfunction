@@ -18,4 +18,8 @@ scoreboard objectives add SPWN_Temporary dummy
 # 
 scoreboard objectives add SPWN_ClickSign trigger
 
+
+# Trigger to cancel game start. can only be clicked by moderators.
+scoreboard objectives add SPWN_CancelStart trigger
+
 scoreboard players set $Glass SPWN_SpawnStuff 0

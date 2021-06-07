@@ -54,3 +54,21 @@ team add Radio_BLUE "Blue Channel"
 team modify Radio_BLUE color white
 team add Radio_GREEN "Green Channel"
 team modify Radio_GREEN color white
+
+
+# Gamerules
+gamerule doInsomnia false
+gamerule doImmediateRespawn true
+gamerule announceAdvancements false
+gamerule disableRaids true
+gamerule doDaylightCycle false
+time set noon
+gamerule doWeatherCycle false
+gamerule doFireTick false
+gamerule spawnRadius 0
+gamerule showDeathMessages false
+gamerule spectatorsGenerateChunks false
+gamerule doPatrolSpawning false
+gamerule doTraderSpawning false
+gamerule mobGriefing false
+gamerule naturalRegeneration false
