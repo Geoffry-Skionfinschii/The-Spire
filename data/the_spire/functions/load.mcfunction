@@ -72,3 +72,17 @@ gamerule doPatrolSpawning false
 gamerule doTraderSpawning false
 gamerule mobGriefing false
 gamerule naturalRegeneration false
+gamerule doLimitedCrafting true
+
+
+
+# Essential Tags
+#define tag W_WORLDSPAWN Worldspawn marker
+#define tag W_BUILDING A building - should be placed at the center of any structure
+
+#define tag BLD_CABIN Cabin building
+#define tag BLD_OBJ Objective building
+#define tag BLD_MISC Miscellaneous building
+
+# extra tags should be defined as needed per structure
+

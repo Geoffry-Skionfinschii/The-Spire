@@ -1,0 +1,14 @@
+{
+    "targets": [
+        "swap",
+        "final",
+        "datapls"
+    ],
+    "passes": [
+        {
+            "name": "entity_outline",
+            "intarget": "final",
+            "outtarget": "datapls"
+        }
+    ]
+}

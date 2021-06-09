@@ -1,6 +1,7 @@
 tellraw @a "Begin 2"
 
 clear @a
+recipe take @a *
 
 title @a actionbar "The game begins..."
 

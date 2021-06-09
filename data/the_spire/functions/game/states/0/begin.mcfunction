@@ -1,5 +1,6 @@
 
 scoreboard players operation $GameBeginTimer G_Timers = #30sec G_Constants
+scoreboard players set $GameBeginTimer G_Timers 120
 
 scoreboard players reset @a SPWN_CancelStart
 scoreboard players enable @a[tag=SPAWN_MODERATOR] SPWN_CancelStart
