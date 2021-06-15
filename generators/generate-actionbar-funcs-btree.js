@@ -4,12 +4,16 @@ const BTree = require('sorted-btree');
 
 const FUNCTION_DIR = "the_spire:game/states/2/state/actionbar/renderer";
 //All 8
-const PROGRESS_FRACTIONALS = [``,``,``,``,``,``,``,``,``];
-const TEMP_AMNT_INDICATORS = [``, ``, ``, ``, ``, ``, ``]; //From triple down to triple up
+const PROGRESS_FRACTIONALS = [];
 
-const TEMP_BAR_LEN = 10;
+for(let i = 0xE000; i < 0xE000 + 80; i++) {
+    PROGRESS_FRACTIONALS.push(String.fromCharCode(i));
+}
+const TEMP_AMNT_INDICATORS = ["", "", "", "", "", "", ""]; //From triple down to triple up
+
+const TEMP_BAR_LEN = 1;
 const TEMP_BAR_MAX = 80;
-const FOOD_BAR_LEN = 10;
+const FOOD_BAR_LEN = 1;
 const FOOD_BAR_MAX = 80;
 
 
@@ -36,19 +40,13 @@ const recursiveGenerate = (node, output = {}) => {
     return constructedOutputTree;
 }
 
-const getBar = (value, len) => {
-    let barPercentRaw = value / len;
+const getBar = (value, max, len) => {
+    let barPercentRaw = (value / max) * len;
+
     let barPercent = Math.floor(barPercentRaw);
     //console.log(barPercent);
 
-    let remainingBarPart = barPercentRaw - barPercent;
-    let str = `${PROGRESS_FRACTIONALS[PROGRESS_FRACTIONALS.length - 1].repeat(barPercent)}`;
-
-    //console.log(remainingBarPart);
-
-    str += PROGRESS_FRACTIONALS[Math.floor(remainingBarPart * PROGRESS_FRACTIONALS.length)];
-
-    str += `${PROGRESS_FRACTIONALS[0].repeat(Math.max(0, len - str.length))}`;
+    let str = `${PROGRESS_FRACTIONALS[Math.floor(barPercentRaw * (PROGRESS_FRACTIONALS.length - 1))]}`;
 
     if(str.includes("undefined")) throw str;
     return str.substr(0, len);
@@ -56,10 +54,10 @@ const getBar = (value, len) => {
 
 const getMinecraftTellraw = (temp, food, temp_change) => {
     return JSON.stringify([
-        {"text": `${temp_change - 3} ${temp}`},
-        getBar(temp, TEMP_BAR_LEN),
-        {"text": `    Food ${food}: `},
-        getBar(food, FOOD_BAR_LEN)
+        {"text": `${TEMP_AMNT_INDICATORS[temp_change]} 🔥 `, "color": "gold"},
+        {"text": getBar(temp, TEMP_BAR_MAX, TEMP_BAR_LEN), "color": temp < (TEMP_BAR_MAX / 2) ? "red" : "aqua"},
+        {"text": `               Food: `, "color": "gold"},
+        {"text": getBar(food, FOOD_BAR_MAX, FOOD_BAR_LEN), "color": food < (FOOD_BAR_MAX / 2) ? "red" : "aqua"}
     ]);
 }
 
@@ -110,12 +108,12 @@ const generateMCFunctionRecursive = (struct, file_dir = './generated_actionbar/r
         if(typeof(data) == "string") {
             //Generate the tellraw file
             if(prevKey == null) {
-                executeList += `execute if score #actionbar_data G_Temporary matches ..${key} run tellraw @s ${data}\n`;
+                executeList += `execute if score #actionbar_data G_Temporary matches ..${key} run title @s actionbar ${data}\n`;
             } else {
                 if(+prevKey + 1 == key) {
-                    executeList += `execute if score #actionbar_data G_Temporary matches ${key} run tellraw @s ${data}\n`;
+                    executeList += `execute if score #actionbar_data G_Temporary matches ${key} run title @s actionbar ${data}\n`;
                 } else {
-                    executeList += `execute if score #actionbar_data G_Temporary matches ${+prevKey + 1}..${key} run tellraw @s ${data}\n`;
+                    executeList += `execute if score #actionbar_data G_Temporary matches ${+prevKey + 1}..${key} run title @s actionbar ${data}\n`;
                 }
             }
         } else {
