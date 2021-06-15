@@ -1,0 +1,5 @@
+{
+    "datapack.env.exclude": [
+        "data/the_spire/functions/game/states/2/state/actionbar/renderer/**/execute_tree.mcfunction"
+    ]
+}
