@@ -123,12 +123,12 @@ const generateMCFunctionRecursive = (struct, file_dir = './generated_actionbar/r
             generateMCFunctionRecursive(data, file_dir + `/${key}`, func_dir + `/${key}`);
 
             if(prevKey == null) {
-                executeList += `execute if score #actionbar_data G_Temporary matches ..${key} run function ${func_dir}/${key}/execute\n`;
+                executeList += `execute if score #actionbar_data G_Temporary matches ..${key} run function ${func_dir}/${key}/execute_tree\n`;
             } else {
                 if(+prevKey + 1 == key) {
-                    executeList += `execute if score #actionbar_data G_Temporary matches ${key} run function ${func_dir}/${key}/execute\n`;
+                    executeList += `execute if score #actionbar_data G_Temporary matches ${key} run function ${func_dir}/${key}/execute_tree\n`;
                 } else {
-                    executeList += `execute if score #actionbar_data G_Temporary matches ${+prevKey + 1}..${key} run function ${func_dir}/${key}/execute\n`;
+                    executeList += `execute if score #actionbar_data G_Temporary matches ${+prevKey + 1}..${key} run function ${func_dir}/${key}/execute_tree\n`;
                 }
             }
         }

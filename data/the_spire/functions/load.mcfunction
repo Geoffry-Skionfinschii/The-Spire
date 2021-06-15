@@ -16,12 +16,16 @@ scoreboard players set #15min G_Constants 18000
 scoreboard players set #1min G_Constants 1200
 scoreboard players set #30sec G_Constants 600
 scoreboard players set #12000 G_Constants 12000
+scoreboard players set #10000 G_Constants 10000
 scoreboard players set #120 G_Constants 120
 scoreboard players set #100 G_Constants 100
 scoreboard players set #99 G_Constants 99
+scoreboard players set #80 G_Constants 80
 scoreboard players set #2 G_Constants 2
 scoreboard players set #5 G_Constants 5
 scoreboard players set #20 G_Constants 20
+scoreboard players set #2^16 G_Constants 65536
+scoreboard players set #2^8 G_Constants 256
 # Timer values - These are all timers, make sure to check for duplicates.
 scoreboard objectives add G_Timers dummy
 # Game settings - All game settings, these should not change during a game, only during Game State 0
