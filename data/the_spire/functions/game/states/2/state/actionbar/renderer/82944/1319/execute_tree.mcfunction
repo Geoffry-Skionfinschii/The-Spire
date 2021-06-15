@@ -1,0 +1,16 @@
+execute if score #actionbar_data G_Temporary matches ..31 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/31/execute
+execute if score #actionbar_data G_Temporary matches 32..60 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/60/execute
+execute if score #actionbar_data G_Temporary matches 61..267 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/267/execute
+execute if score #actionbar_data G_Temporary matches 268..299 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/299/execute
+execute if score #actionbar_data G_Temporary matches 300..315 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/315/execute
+execute if score #actionbar_data G_Temporary matches 316..520 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/520/execute
+execute if score #actionbar_data G_Temporary matches 521..552 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/552/execute
+execute if score #actionbar_data G_Temporary matches 553..568 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/568/execute
+execute if score #actionbar_data G_Temporary matches 569..774 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/774/execute
+execute if score #actionbar_data G_Temporary matches 775..806 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/806/execute
+execute if score #actionbar_data G_Temporary matches 807..822 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/822/execute
+execute if score #actionbar_data G_Temporary matches 823..1029 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/1029/execute
+execute if score #actionbar_data G_Temporary matches 1030..1061 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/1061/execute
+execute if score #actionbar_data G_Temporary matches 1062..1080 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/1080/execute
+execute if score #actionbar_data G_Temporary matches 1081..1287 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/1287/execute
+execute if score #actionbar_data G_Temporary matches 1288..1319 run function the_spire:game/states/2/state/actionbar/renderer/82944/1319/1319/execute

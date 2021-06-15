@@ -1,0 +1,17 @@
+execute if score #actionbar_data G_Temporary matches ..16455 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/16455/execute
+execute if score #actionbar_data G_Temporary matches 16456..16650 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/16650/execute
+execute if score #actionbar_data G_Temporary matches 16651..16682 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/16682/execute
+execute if score #actionbar_data G_Temporary matches 16683..16698 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/16698/execute
+execute if score #actionbar_data G_Temporary matches 16699..16898 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/16898/execute
+execute if score #actionbar_data G_Temporary matches 16899..16914 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/16914/execute
+execute if score #actionbar_data G_Temporary matches 16915..16946 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/16946/execute
+execute if score #actionbar_data G_Temporary matches 16947..16962 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/16962/execute
+execute if score #actionbar_data G_Temporary matches 16963..17162 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/17162/execute
+execute if score #actionbar_data G_Temporary matches 17163..17194 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/17194/execute
+execute if score #actionbar_data G_Temporary matches 17195..17210 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/17210/execute
+execute if score #actionbar_data G_Temporary matches 17211..17414 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/17414/execute
+execute if score #actionbar_data G_Temporary matches 17415..17446 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/17446/execute
+execute if score #actionbar_data G_Temporary matches 17447..17462 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/17462/execute
+execute if score #actionbar_data G_Temporary matches 17463..17669 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/17669/execute
+execute if score #actionbar_data G_Temporary matches 17670..17701 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/17701/execute
+execute if score #actionbar_data G_Temporary matches 17702..17720 run function the_spire:game/states/2/state/actionbar/renderer/82944/17720/17720/execute
