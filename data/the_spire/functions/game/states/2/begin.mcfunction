@@ -19,6 +19,11 @@ scoreboard players set @a G_ValidPlayers 1
 scoreboard players set @a G_Temperature 9999999
 scoreboard players set @a G_AmbTemperature 0
 
+scoreboard players set @s G_PlayerHP 2000
+scoreboard players set @s G_PlayerMaxHP 2000
+scoreboard players set @s G_PlayerFood 10000
+scoreboard players operation @s mc_PlayerPrevHP = @s mc_PlayerHP
+
 #define score_holder $RecalculateAmbientTemperature G_Timers - Timer to track how long since last temperature calculation.
 scoreboard players set $RecalculateAmbientTemperature G_Timers 0
 

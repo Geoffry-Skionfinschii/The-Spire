@@ -7,7 +7,7 @@ execute if score @s G_AmbTemperature matches ..-1 run scoreboard players set #te
 
 
 execute unless score $RenderPlayerBar G_Timers matches -2147483648..2147483647 run scoreboard players set $RenderPlayerBar G_Timers 0
-execute if score $RenderPlayerBar G_Timers matches 0 run function the_spire:game/states/2/state/actionbar/renderer/render_actionbar
+execute if score $RenderPlayerBar G_Timers matches 0 run function the_spire:game/states/2/state/actionbar/renderer/execute_tree
 
 scoreboard players add $RenderPlayerBar G_Timers 1
 execute if score $RenderPlayerBar G_Timers matches 5.. run scoreboard players set $RenderPlayerBar G_Timers 0

@@ -26,10 +26,8 @@
 scoreboard players set #area_temperature_calc G_Temporary -10
 
 # Snowing and outside
-# (If player is within a 'weathersafe' area, but not underneath a block)
-execute if predicate the_spire:is_raining if entity @e[type=marker,tag=TM_WEATHERSAFE,distance=..30] if blocks ~ ~1 ~ ~ 250 ~ ~ ~3 ~ all run scoreboard players remove #area_temperature_calc G_Temporary 20
 # (If a player is not within a 'weathersafe' area)
-execute if predicate the_spire:is_raining unless entity @e[type=marker,tag=TM_WEATHERSAFE,distance=..30] run scoreboard players remove #area_temperature_calc G_Temporary 20
+execute if predicate the_spire:is_raining unless entity @e[type=marker,tag=W_BUILDING,distance=..30] unless block ~ ~1 ~ cave_air run scoreboard players remove #area_temperature_calc G_Temporary 20
 
 # Is the player in water or on ice?
 execute if block ~ ~ ~ water run scoreboard players remove #area_temperature_calc G_Temporary 100
@@ -44,5 +42,8 @@ execute if predicate the_spire:is_lava_nearby run scoreboard players add #area_t
 
 # Are they on fire? - Add lava again
 execute if predicate the_spire:is_burning run scoreboard players add #area_temperature_calc G_Temporary 50
+
+# Are they inside the hut, add 100
+execute if block ~ ~1 ~ cave_air if entity @e[type=marker,tag=BLD_CABIN] run scoreboard players add #area_temperature_calc G_Temporary 100
 
 scoreboard players operation @s G_AmbTemperature = #area_temperature_calc G_Temporary
