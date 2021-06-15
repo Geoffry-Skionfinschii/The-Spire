@@ -54,6 +54,17 @@ scoreboard objectives add G_PlayerHP dummy "Player HP"
 # Player food score - goes from 10000 -> 0 over time. Eating food ups this.
 scoreboard objectives add G_PlayerFood dummy "Player Hunger"
 
+# Player ID - Used to display player names for voting and various aspects of the game
+scoreboard objectives add G_PlayerId dummy "PlayerID"
+scoreboard players set $CurrentId G_PlayerId 0
+
+# Evicted Votes - A trigger objective players can use, tracks currently selected PlayerId for each person
+scoreboard objectives add G_EvictedVote trigger "EvictedIDS"
+# Previous vote - Used so we know when a player changed vote
+scoreboard objectives add G_PreEvictedVote dummy "Previous Vote"
+
+# Player clicked lectern inside cabin
+scoreboard objectives add mc_LecternUsed minecraft.custom:interact_with_lectern "Lectern uses"
 # Current player food
 scoreboard objectives add mc_PlayerFood food "Minecraft Player Food"
 # Eaten tropical fish - (food reskinned as cooked beef)
