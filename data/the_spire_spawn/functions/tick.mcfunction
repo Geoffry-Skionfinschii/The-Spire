@@ -11,4 +11,6 @@ execute if score $GlassTimer SPWN_SpawnStuff matches 200.. at @e[type=marker,lim
 execute if score $GlassTimer SPWN_SpawnStuff matches 200.. run scoreboard players set $GlassTimer SPWN_SpawnStuff 0
 
 
+execute at @e[type=marker,limit=1,tag=GEN_SPAWN_MARKER] positioned ~ ~29 ~ as @e[type=player,distance=20..] run tp @s ~ ~ ~
+
 gamemode adventure @a[tag=!SPAWN_MODERATOR]

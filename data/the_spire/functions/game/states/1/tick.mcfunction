@@ -6,11 +6,14 @@
 # Generate 3 repair sites - >100 blocks of center
 # Generate 8 minor buildings - >100 blocks of center, >50 blocks other structures
 # Generate 4 traitor airdops - within 40 blocks of cabin, repair or minor
-execute if score $WorldGenStep G_Timers matches 1 run function the_spire_worldgen:generate_world/world/find_spawn
+execute if score $debug G_StatusReg matches 1 if score $WorldGenStep G_Timers matches 1 run tellraw @a "Finding suitable spawn point..."
+execute if score $WorldGenStep G_Timers matches 1 run function the_spire:game/states/1/state/generate_world/world/find_spawn
 
-execute if score $WorldGenStep G_Timers matches 5 run function the_spire_worldgen:generate_world/essentials/generate
+execute if score $debug G_StatusReg matches 1 if score $WorldGenStep G_Timers matches 2 run tellraw @a "Generating essential structures..."
+execute if score $WorldGenStep G_Timers matches 2 run function the_spire:game/states/1/state/generate_world/essentials/generate
 
-execute if score $WorldGenStep G_Timers matches 9 positioned as @e[type=marker,tag=BLD_CABIN,limit=1] run tp @a ~ ~ ~
+execute if score $debug G_StatusReg matches 1 if score $WorldGenStep G_Timers matches 5 run tellraw @a "Moving players to cabin..."
+execute if score $WorldGenStep G_Timers matches 5 positioned as @e[type=marker,tag=BLD_CABIN,limit=1] run tp @a ~ ~ ~
 
 
 
@@ -19,6 +22,6 @@ execute if score $WorldGenStep G_Timers matches 9 positioned as @e[type=marker,t
 
 
 scoreboard players add $WorldGenStep G_Timers 1
-execute if score $WorldGenStep G_Timers matches 200.. run scoreboard players set $game_state G_StatusReg 2
+execute if score $WorldGenStep G_Timers matches 6.. run scoreboard players set $game_state G_StatusReg 2
 
 

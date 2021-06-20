@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                    "selector": "@s",
+                    "color": "red",
+                    "italic": false
+                  }
+              },
+              {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{GetNameItemLootTable:1b}"
+              },
+              {
+                  "function": "minecraft:fill_player_head",
+                  "entity": "this"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

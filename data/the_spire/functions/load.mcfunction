@@ -73,6 +73,8 @@ scoreboard objectives add mc_EatenFood minecraft.used:tropical_fish "Basic Food"
 scoreboard objectives add mc_PlayerHP health "Minecraft Player HP"
 # In game player HP, previous tick.
 scoreboard objectives add mc_PlayerPrevHP dummy "Minecraft Player HP"
+# Death counter for detecting deaths
+scoreboard objectives add mc_Deaths minecraft.custom:deaths "Deaths"
 
 # A scoreboard that tracks players that actually exist in the current game. Any players not in this list
 # should be modified by the current gamestate as seen fit.
@@ -112,6 +114,12 @@ gamerule doTraderSpawning false
 gamerule mobGriefing false
 gamerule naturalRegeneration false
 gamerule doLimitedCrafting true
+execute unless score $debug G_StatusReg matches 1 run gamerule sendCommandFeedback false
+execute if score $debug G_StatusReg matches 1 run gamerule sendCommandFeedback true
+
+
+execute if score $debug G_StatusReg matches 1 run tellraw @a "This game is running in DEBUG mode"
+execute if score $debug G_StatusReg matches 1 run tellraw @a {"text":"Click here to disable","clickEvent": {"action": "run_command","value": "/function the_spire:disable_debug"}}
 
 
 

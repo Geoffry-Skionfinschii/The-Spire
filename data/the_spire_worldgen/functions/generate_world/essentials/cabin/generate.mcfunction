@@ -1,3 +1,0 @@
-
-
-function the_spire_worldgen:generate_world/essentials/cabin/generate_cabin/find_cabin
