@@ -63,6 +63,10 @@ scoreboard objectives add G_EvictedVote trigger "EvictedIDS"
 # Previous vote - Used so we know when a player changed vote
 scoreboard objectives add G_PreEvictedVote dummy "Previous Vote"
 
+# Dead body dragging scoreboard
+# Stores a reference to the entity being dragged & the player who is dragging
+scoreboard objectives add G_DraggingBodyId dummy "Drag Ids"
+
 # Player clicked lectern inside cabin
 scoreboard objectives add mc_LecternUsed minecraft.custom:interact_with_lectern "Lectern uses"
 # Current player food

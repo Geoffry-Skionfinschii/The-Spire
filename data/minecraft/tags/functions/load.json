@@ -1,6 +1,7 @@
 {
     "values": [
         "the_spire:load",
-        "the_spire_spawn:load"
+        "the_spire_spawn:load",
+        "math:zprivate/init"
     ]
 }

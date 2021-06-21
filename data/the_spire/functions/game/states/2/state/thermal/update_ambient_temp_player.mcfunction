@@ -44,6 +44,10 @@ execute if predicate the_spire:is_lava_nearby run scoreboard players add #area_t
 execute if predicate the_spire:is_burning run scoreboard players add #area_temperature_calc G_Temporary 50
 
 # Are they inside the hut, add 100
-execute if block ~ ~1 ~ cave_air if entity @e[type=marker,tag=BLD_CABIN] run scoreboard players add #area_temperature_calc G_Temporary 100
+# Also add a check for endgame
+execute if block ~ ~1 ~ cave_air if entity @e[type=marker,tag=BLD_CABIN,distance=..10] run scoreboard players add #area_temperature_calc G_Temporary 100
+
+
+# Is it endgame? It will be fucking freezing
 
 scoreboard players operation @s G_AmbTemperature = #area_temperature_calc G_Temporary
