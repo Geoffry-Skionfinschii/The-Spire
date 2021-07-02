@@ -80,6 +80,8 @@ execute if entity @s[tag=SURVIVOR] run function the_spire:game/states/2/state/in
 # If there are more blocker items than expected, remove all Fixed and Blocker items
 execute store result score #get_clearables G_Temporary run clear @s #the_spire:inventory_blocker{Fixed:1b,Blocker:1b} 0
 execute if score #expected_clearables G_Temporary < #get_clearables G_Temporary run clear @s #the_spire:inventory_blocker{Fixed:1b,Blocker:1b}
+# If we cleared blockables, run this function again to repair inventory structure
+execute if score #expected_clearables G_Temporary < #get_clearables G_Temporary run function the_spire:game/states/2/state/inventory/generic_tick
 
 # Run this, as the other functions will have an opportunity to reject an item
 function the_spire:game/states/2/state/inventory/drop_item_list

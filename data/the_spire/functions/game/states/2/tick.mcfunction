@@ -1,7 +1,9 @@
 
+function the_spire:game/states/2/state/craftables/tick
+
 function the_spire:game/states/2/state/dead_body/tick
 
-function the_spire:game/states/2/state/inventory/tick
+
 function the_spire:game/states/2/state/radio/detect_radio
 
 # Calculate food before thermal tick

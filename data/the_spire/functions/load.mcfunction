@@ -16,7 +16,9 @@ scoreboard players set #15min G_Constants 18000
 scoreboard players set #1min G_Constants 1200
 scoreboard players set #30sec G_Constants 600
 scoreboard players set #12000 G_Constants 12000
+scoreboard players set #11999 G_Constants 11999
 scoreboard players set #10000 G_Constants 10000
+scoreboard players set #9999 G_Constants 9999
 scoreboard players set #120 G_Constants 120
 scoreboard players set #100 G_Constants 100
 scoreboard players set #99 G_Constants 99
@@ -66,6 +68,9 @@ scoreboard objectives add G_PreEvictedVote dummy "Previous Vote"
 # Dead body dragging scoreboard
 # Stores a reference to the entity being dragged & the player who is dragging
 scoreboard objectives add G_DraggingBodyId dummy "Drag Ids"
+
+# Tracks campfire life and extinguishes them after a time
+scoreboard objectives add G_CampfireExpiry dummy "Marker campfire expiry"
 
 # Player clicked lectern inside cabin
 scoreboard objectives add mc_LecternUsed minecraft.custom:interact_with_lectern "Lectern uses"

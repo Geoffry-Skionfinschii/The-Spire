@@ -31,11 +31,11 @@ execute if predicate the_spire:is_raining unless entity @e[type=marker,tag=W_BUI
 
 # Is the player in water or on ice?
 execute if block ~ ~ ~ water run scoreboard players remove #area_temperature_calc G_Temporary 100
-execute if block ~ ~-1 ~ ice run scoreboard players remove #area_temperature_calc G_Temporary 50
-execute if block ~ ~-1 ~ air if block ~ ~-2 ~ ice run scoreboard players remove #area_temperature_calc G_Temporary 50
+execute if block ~ ~-1 ~ ice run scoreboard players remove #area_temperature_calc G_Temporary 30
+execute if block ~ ~-1 ~ air if block ~ ~-2 ~ ice run scoreboard players remove #area_temperature_calc G_Temporary 30
 
 # Is there a campfire within 5 blocks
-execute if predicate the_spire:is_campfire_nearby run scoreboard players add #area_temperature_calc G_Temporary 30
+execute if predicate the_spire:is_lit_campfire_nearby run scoreboard players add #area_temperature_calc G_Temporary 30
 
 # Is there lava within an area
 execute if predicate the_spire:is_lava_nearby run scoreboard players add #area_temperature_calc G_Temporary 45

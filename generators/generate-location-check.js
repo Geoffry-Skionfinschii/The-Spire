@@ -21,19 +21,17 @@ const ask = (query) => new Promise((resolve) => rl.question(query, resolve));
         ]
     };
 
-    let termBuilder = (x, y, z, block) => {
+    let termBuilder = (x, y, z) => {
         return {
-            "condition": "minecraft:location_check",
+            "condition": "location_check",
             "offsetX": x,
             "offsetY": y,
             "offsetZ": z,
             "predicate": {
                 "block": {
-                    "blocks": [
-                        block
-                    ]
+                    "blocks": ["minecraft:campfire"],
+                    "state": {"lit": true}
                 }
-            
             }
         }
     }

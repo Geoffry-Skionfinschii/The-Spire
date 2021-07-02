@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "inventory_changed_trig": {
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+     "rewards": {
+         "function": "the_spire:game/states/2/state/inventory/advancement_trig"
+    }
+}

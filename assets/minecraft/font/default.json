@@ -2,726 +2,692 @@
     "providers": [
         {
             "type": "bitmap",
-            "file": "the_spire:fonts/0_80.png",
-            "ascent": 8,
+            "file": "the_spire:fonts/ui/fire_icon_blank.png",
+            "ascent": -1,
+            "height": 24,
             "chars": [
-                ""
+                "\uE000"
             ]
         },
         {
             "type": "bitmap",
-            "file": "the_spire:fonts/1_80.png",
-            "ascent": 8,
+            "file": "the_spire:fonts/ui/fire_icon_half.png",
+            "ascent": -1,
+            "height": 24,
             "chars": [
-                ""
+                "\uE001"
             ]
         },
         {
             "type": "bitmap",
-            "file": "the_spire:fonts/2_80.png",
-            "ascent": 8,
+            "file": "the_spire:fonts/ui/fire_icon.png",
+            "ascent": -1,
+            "height": 24,
             "chars": [
-                ""
+                "\uE002"
             ]
         },
         {
             "type": "bitmap",
-            "file": "the_spire:fonts/3_80.png",
-            "ascent": 8,
+            "file": "the_spire:fonts/ui/food_empty.png",
+            "ascent": -26,
+            "height": 9,
             "chars": [
-                ""
+                "\uE010"
             ]
         },
         {
             "type": "bitmap",
-            "file": "the_spire:fonts/4_80.png",
-            "ascent": 8,
+            "file": "the_spire:fonts/ui/food_half.png",
+            "ascent": -26,
+            "height": 9,
             "chars": [
-                ""
+                "\uE011"
             ]
         },
         {
             "type": "bitmap",
-            "file": "the_spire:fonts/5_80.png",
-            "ascent": 8,
+            "file": "the_spire:fonts/ui/food_full.png",
+            "ascent": -26,
+            "height": 9,
             "chars": [
-                ""
+                "\uE012"
             ]
         },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/6_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/7_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/8_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/9_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/10_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/11_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/12_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/13_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/14_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/15_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/16_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/17_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/18_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/19_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/20_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/21_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/22_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/23_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/24_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/25_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/26_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/27_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/28_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/29_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/30_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/31_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/32_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/33_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/34_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/35_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/36_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/37_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/38_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/39_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/40_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/41_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/42_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/43_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/44_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/45_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/46_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/47_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/48_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/49_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/50_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/51_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/52_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/53_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/54_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/55_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/56_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/57_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/58_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/59_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/60_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/61_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/62_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/63_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/64_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/65_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/66_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/67_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/68_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/69_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/70_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/71_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/72_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/73_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/74_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/75_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/76_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/77_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/78_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/79_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "the_spire:fonts/80_80.png",
-            "ascent": 8,
-            "chars": [
-                ""
-            ]
-        },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         {
             "type": "bitmap",
             "file": "the_spire:fonts/thermal_arrows/freezing.png",
-            "ascent": 8,
+            "ascent": -17,
             "chars": [
-                ""
+                "\uE020"
             ]
         },
         {
             "type": "bitmap",
             "file": "the_spire:fonts/thermal_arrows/colder.png",
-            "ascent": 8,
+            "ascent": -17,
             "chars": [
-                ""
+                "\uE021"
             ]
         },
         {
             "type": "bitmap",
             "file": "the_spire:fonts/thermal_arrows/cold.png",
-            "ascent": 8,
+            "ascent": -17,
             "chars": [
-                ""
+                "\uE022"
             ]
         },
         {
             "type": "bitmap",
             "file": "the_spire:fonts/thermal_arrows/stable.png",
-            "ascent": 8,
+            "ascent": -17,
             "chars": [
-                ""
+                "\uE023"
             ]
         },
         {
             "type": "bitmap",
             "file": "the_spire:fonts/thermal_arrows/warm.png",
-            "ascent": 8,
+            "ascent": -17,
             "chars": [
-                ""
+                "\uE024"
             ]
         },
         {
             "type": "bitmap",
             "file": "the_spire:fonts/thermal_arrows/warmer.png",
-            "ascent": 8,
+            "ascent": -17,
             "chars": [
-                ""
+                "\uE025"
             ]
         },
         {
             "type": "bitmap",
             "file": "the_spire:fonts/thermal_arrows/hot.png",
-            "ascent": 8,
+            "ascent": -17,
             "chars": [
-                ""
+                "\uE026"
+            ]
+        },
+
+
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -3,
+            "chars": [
+                "\uF801"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -4,
+            "chars": [
+                "\uF802"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -5,
+            "chars": [
+                "\uF803"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -6,
+            "chars": [
+                "\uF804"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -7,
+            "chars": [
+                "\uF805"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -8,
+            "chars": [
+                "\uF806"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -9,
+            "chars": [
+                "\uF807"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -10,
+            "chars": [
+                "\uF808"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -18,
+            "chars": [
+                "\uF809"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -34,
+            "chars": [
+                "\uF80A"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -66,
+            "chars": [
+                "\uF80B"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -130,
+            "chars": [
+                "\uF80C"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -258,
+            "chars": [
+                "\uF80D"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -514,
+            "chars": [
+                "\uF80E"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": -1026,
+            "chars": [
+                "\uF80F"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -65536,
+            "height": -32770,
+            "chars": [
+                "\uF800"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 0,
+            "chars": [
+                "\uF821"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 1,
+            "chars": [
+                "\uF822"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 2,
+            "chars": [
+                "\uF823"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 3,
+            "chars": [
+                "\uF824"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 4,
+            "chars": [
+                "\uF825"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 5,
+            "chars": [
+                "\uF826"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 6,
+            "chars": [
+                "\uF827"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 7,
+            "chars": [
+                "\uF828"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 15,
+            "chars": [
+                "\uF829"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 31,
+            "chars": [
+                "\uF82A"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 63,
+            "chars": [
+                "\uF82B"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 127,
+            "chars": [
+                "\uF82C"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 255,
+            "chars": [
+                "\uF82D"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 511,
+            "chars": [
+                "\uF82E"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -32768,
+            "height": 1023,
+            "chars": [
+                "\uF82F"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_split.png",
+            "ascent": -65536,
+            "height": 32767,
+            "chars": [
+                "\uF820"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -3,
+            "chars": [
+                "\uF811"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -4,
+            "chars": [
+                "\uF812"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -5,
+            "chars": [
+                "\uF813"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -6,
+            "chars": [
+                "\uF814"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -7,
+            "chars": [
+                "\uF815"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -8,
+            "chars": [
+                "\uF816"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -9,
+            "chars": [
+                "\uF817"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -10,
+            "chars": [
+                "\uF818"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -18,
+            "chars": [
+                "\uF819"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -34,
+            "chars": [
+                "\uF81A"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -66,
+            "chars": [
+                "\uF81B"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -130,
+            "chars": [
+                "\uF81C"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -258,
+            "chars": [
+                "\uF81D"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -514,
+            "chars": [
+                "\uF81E"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": -1026,
+            "chars": [
+                "\uF81F"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -65536,
+            "height": -32770,
+            "chars": [
+                "\uF810"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 0,
+            "chars": [
+                "\uF831"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 1,
+            "chars": [
+                "\uF832"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 2,
+            "chars": [
+                "\uF833"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 3,
+            "chars": [
+                "\uF834"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 4,
+            "chars": [
+                "\uF835"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 5,
+            "chars": [
+                "\uF836"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 6,
+            "chars": [
+                "\uF837"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 7,
+            "chars": [
+                "\uF838"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 15,
+            "chars": [
+                "\uF839"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 31,
+            "chars": [
+                "\uF83A"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 63,
+            "chars": [
+                "\uF83B"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 127,
+            "chars": [
+                "\uF83C"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 255,
+            "chars": [
+                "\uF83D"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 511,
+            "chars": [
+                "\uF83E"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -32768,
+            "height": 1023,
+            "chars": [
+                "\uF83F"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/space_nosplit.png",
+            "ascent": -65536,
+            "height": 32767,
+            "chars": [
+                "\uF830"
             ]
         }
-
     ]
 }

@@ -9,13 +9,15 @@ const PROGRESS_FRACTIONALS = [];
 for(let i = 0xE000; i < 0xE000 + 80; i++) {
     PROGRESS_FRACTIONALS.push(String.fromCharCode(i));
 }
-const TEMP_AMNT_INDICATORS = ["", "", "", "", "", "", ""]; //From triple down to triple up
 
-const TEMP_BAR_LEN = 1;
-const TEMP_BAR_MAX = 80;
-const FOOD_BAR_LEN = 1;
-const FOOD_BAR_MAX = 80;
+const THERMAL_ICO = {full: '\uE002', half: '\uE001', empty: '\uE000', betweenElements: '\uF801'}
+const FOOD_ICO = {full: '\uE012', half: '\uE011', empty: '\uE010', betweenElements: '\uF802'}
+const TEMP_AMNT_INDICATORS = ['\uE020', '\uE021', '\uE022', '\uE023', '\uE024', '\uE025', '\uE026']; //From triple down to triple up
 
+
+
+// Command to show bar at normal values
+// /title @a actionbar {"text":"\uF82B\uF82A\uF826\uE002\uF801\uE002\uF801\uE002\uF801\uE002\uF801\uE002\uF801\uE002\uF801\uE001\uF801\uE000\uF801\uE002\uF801\uE002\uF802\uE020\uF80B\uF809\uF808\uE012\uF802\uE012\uF802\uE012\uF802\uE012\uF802\uE012\uF802\uE012\uF802\uE011\uF802\uE010\uF802\uE012\uF802\uE012"}
 
 
 const BTREE = new BTree.default(undefined, undefined, 32);
@@ -40,30 +42,46 @@ const recursiveGenerate = (node, output = {}) => {
     return constructedOutputTree;
 }
 
-const getBar = (value, max, len) => {
-    let barPercentRaw = (value / max) * len;
 
-    let barPercent = Math.floor(barPercentRaw);
-    //console.log(barPercent);
+/**
+ * 
+ * @param {{full: string, half:string, empty:string, betweenElements:string}} barData 
+ * @param {number} value 
+ */
+const genSingleBar = (barData, value) => {
+    let bar = [];
+    let fullNum = Math.floor(value / 2);
+    let showHalf = value % 2 == 0 ? false : true;
+    let emptyNum = 10 - fullNum - (showHalf ? 1 : 0);
 
-    let str = `${PROGRESS_FRACTIONALS[Math.floor(barPercentRaw * (PROGRESS_FRACTIONALS.length - 1))]}`;
+    for(let i = 0; i < emptyNum; i++) {
+        bar.push(barData.empty);
+    }
 
-    if(str.includes("undefined")) throw str;
-    return str.substr(0, len);
+    if(showHalf) {
+        bar.push(barData.half);
+    }
+
+    for(let i = 0; i < fullNum; i++) {
+        bar.push(barData.full);
+    }
+
+    return bar.join(barData.betweenElements);
 }
 
 const getMinecraftTellraw = (temp, food, temp_change) => {
+    
+    let tempBar = genSingleBar(THERMAL_ICO, temp);
+    let foodBar = genSingleBar(FOOD_ICO, food);
+
     return JSON.stringify([
-        {"text": `${TEMP_AMNT_INDICATORS[temp_change]} 🔥 `, "color": "gold"},
-        {"text": getBar(temp, TEMP_BAR_MAX, TEMP_BAR_LEN), "color": temp < (TEMP_BAR_MAX / 2) ? "red" : "aqua"},
-        {"text": `               Food: `, "color": "gold"},
-        {"text": getBar(food, FOOD_BAR_MAX, FOOD_BAR_LEN), "color": food < (FOOD_BAR_MAX / 2) ? "red" : "aqua"}
+        {"text": `\uF82B\uF82A\uF826${tempBar}\uF802${TEMP_AMNT_INDICATORS[temp_change]}\uF80B\uF809\uF808${foodBar}`}
     ]);
 }
 
 
-for(let temperature_value = 0; temperature_value <= TEMP_BAR_MAX; temperature_value++) {
-    for(let food_value = 0; food_value <= FOOD_BAR_MAX; food_value++) {
+for(let temperature_value = 0; temperature_value <= 20; temperature_value++) {
+    for(let food_value = 0; food_value <= 20; food_value++) {
         for(let temperate_increase_amnt = 0; temperate_increase_amnt < TEMP_AMNT_INDICATORS.length; temperate_increase_amnt++) {
             let tempIncreaseShifted = temperate_increase_amnt << 16;
             let foodShifted = food_value << 8;
