@@ -85,6 +85,8 @@ scoreboard objectives add mc_PlayerPrevHP dummy "Minecraft Player HP"
 # Death counter for detecting deaths
 scoreboard objectives add mc_Deaths minecraft.custom:deaths "Deaths"
 
+scoreboard objectives add G_DebugInfo dummy "For all debug values"
+
 # A scoreboard that tracks players that actually exist in the current game. Any players not in this list
 # should be modified by the current gamestate as seen fit.
 # This scoreboard should have all values reset at 2-begin
@@ -94,6 +96,10 @@ scoreboard objectives add mc_Deaths minecraft.custom:deaths "Deaths"
 # 2 - Reset Tags, Add to SURVIVOR, GHOST
 scoreboard objectives add G_ValidPlayers dummy
 
+
+bossbar add the_spire:time_remaining "Time until the Storm"
+bossbar set the_spire:time_remaining color blue
+bossbar set the_spire:time_remaining style notched_10
 
 
 

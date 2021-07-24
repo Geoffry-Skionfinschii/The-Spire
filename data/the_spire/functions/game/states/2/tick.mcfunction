@@ -1,4 +1,6 @@
 
+function the_spire:game/states/2/state/weather/tick
+
 function the_spire:game/states/2/state/craftables/tick
 
 function the_spire:game/states/2/state/dead_body/tick
@@ -20,3 +22,11 @@ execute as @e[type=wolf] at @s run function the_spire:game/states/2/state/wolf_a
 execute as @a[scores={mc_Deaths=1..}] at @s run function the_spire:game/states/2/state/dead_body/create_player_body
 #execute as @a[scores={mc_Deaths=1..}] at @s run tp @s @e[type=marker,tag=BLD_CABIN,limit=1]
 execute as @a[scores={mc_Deaths=1..}] run scoreboard players reset @s mc_Deaths
+
+function the_spire:game/states/2/state/bossbar_time_left/tick
+
+
+
+scoreboard players remove $game_time_left G_StatusReg 1
+
+execute if score $game_time_left G_StatusReg matches 0 run tellraw @a "Game ended"

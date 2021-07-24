@@ -15,10 +15,10 @@ execute if score @s G_PlayerFood matches 10001.. run scoreboard players set @s G
 execute if score @s G_PlayerFood matches ..-1 run scoreboard players set @s G_PlayerFood 0
 
 
-# Make sure effectively maximum food, but always 1 less than full
+# Make sure effectively half food - sprinting will always work but can always eat.
 execute unless score @s mc_PlayerFood matches -2147483648..2147483647 run effect give @s hunger 1 255 true
-execute if score @s mc_PlayerFood matches 20.. run effect give @s hunger 1 255 true
-execute if score @s mc_PlayerFood matches ..18 run effect give @s saturation 1 0 true
+execute if score @s mc_PlayerFood matches 12.. run effect give @s hunger 1 255 true
+execute if score @s mc_PlayerFood matches ..10 run effect give @s saturation 1 0 true
 
 
 

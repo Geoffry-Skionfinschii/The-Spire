@@ -12,6 +12,9 @@ execute if score $WorldGenStep G_Timers matches 1 run function the_spire:game/st
 execute if score $debug G_StatusReg matches 1 if score $WorldGenStep G_Timers matches 2 run tellraw @a "Generating essential structures..."
 execute if score $WorldGenStep G_Timers matches 2 run function the_spire:game/states/1/state/generate_world/essentials/generate
 
+execute if score $debug G_StatusReg matches 1 if score $WorldGenStep G_Timers matches 3 run tellraw @a "Generating Misc Structures..."
+execute if score $WorldGenStep G_Timers matches 3 run function the_spire:game/states/1/state/generate_world/misc/generate
+
 execute if score $debug G_StatusReg matches 1 if score $WorldGenStep G_Timers matches 5 run tellraw @a "Moving players to cabin..."
 execute if score $WorldGenStep G_Timers matches 5 positioned as @e[type=marker,tag=BLD_CABIN,limit=1] run tp @a ~ ~ ~
 

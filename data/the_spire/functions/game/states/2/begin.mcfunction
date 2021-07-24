@@ -12,6 +12,10 @@ tag @a remove ASSASSIN
 tag @a remove SURVIVOR
 tag @a remove GHOST
 
+scoreboard players operation $game_time_left G_StatusReg = $game_time G_Settings
+execute store result bossbar the_spire:time_remaining max run scoreboard players get $game_time G_Settings
+bossbar set the_spire:time_remaining visible true
+
 function the_spire:game/states/2/state/select_assassins
 
 function the_spire:game/states/2/state/tell_teams

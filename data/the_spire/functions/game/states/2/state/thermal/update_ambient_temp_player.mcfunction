@@ -27,7 +27,7 @@ scoreboard players set #area_temperature_calc G_Temporary -10
 
 # Snowing and outside
 # (If a player is not within a 'weathersafe' area)
-execute if predicate the_spire:is_raining unless entity @e[type=marker,tag=W_BUILDING,distance=..30] unless block ~ ~1 ~ cave_air run scoreboard players remove #area_temperature_calc G_Temporary 20
+execute if predicate the_spire:is_raining if predicate the_spire:is_exposed_to_sky run scoreboard players remove #area_temperature_calc G_Temporary 20
 
 # Is the player in water or on ice?
 execute if block ~ ~ ~ water run scoreboard players remove #area_temperature_calc G_Temporary 100
