@@ -40,4 +40,3 @@ execute if score $RenderPlayerBar G_Timers matches 0 run function the_spire:game
 
 scoreboard players add $RenderPlayerBar G_Timers 1
 execute if score $RenderPlayerBar G_Timers matches 5.. run scoreboard players set $RenderPlayerBar G_Timers 0
-

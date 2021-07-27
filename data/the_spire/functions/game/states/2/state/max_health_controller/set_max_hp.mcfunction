@@ -3,6 +3,8 @@ scoreboard players operation #hpmax_in_hearts G_Temporary = @s G_PlayerMaxHP
 scoreboard players operation #hpmax_in_hearts G_Temporary += #99 G_Constants
 scoreboard players operation #hpmax_in_hearts G_Temporary /= #100 G_Constants
 
+#tellraw @a "Ran MaxHP"
+
 execute if score #hpmax_in_hearts G_Temporary matches 1 run attribute @s generic.max_health base set 1
 execute if score #hpmax_in_hearts G_Temporary matches 2 run attribute @s generic.max_health base set 2
 execute if score #hpmax_in_hearts G_Temporary matches 3 run attribute @s generic.max_health base set 3

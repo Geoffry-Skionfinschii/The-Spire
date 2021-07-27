@@ -1,0 +1,15 @@
+{
+    "rewards": {
+        "function": "the_spire:game/states/2/state/dead_body/trigger_body_interacted"
+    },
+    "criteria": {
+        "interact_with_dead_body": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "armor_stand"
+                }
+            }
+        }
+    }
+}
